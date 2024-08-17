@@ -1,0 +1,23 @@
+#2个流表
+share streamTable(5000000:0, `timestamp`symbol`invest_type`volume`user_id, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE, SYMBOL]) as positionHistory;
+share streamTable(5000000:0, `timestamp`symbol`invest_type`volume`user_id, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE, SYMBOL]) as positionReal;
+
+def splitPlayBackFunction(mutable userId){
+    allCount  = select count(*) as count from positionHistory;
+    pageSize = 1000;
+    pageCount = int(allCount.count[0]\pageSize);
+    pageLast = allCount.count[0]%pageSize;
+
+    cy = 0:pageCount;
+    if(pageLast >0){
+        cy = 0:(pageCount+1);
+    }
+    for(i in cy){
+        startNum = i * pageSize;
+        insert into positionReal select * from positionHistory limit startNum,pageSize;
+    }
+}
+
+
+user_id = "kongjunlong";
+job1 = submitJob("splitPlayBackJob", "", splitPlayBackFunction, user_id);

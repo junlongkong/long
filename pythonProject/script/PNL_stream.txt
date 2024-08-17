@@ -1,0 +1,78 @@
+#三个流表
+share streamTable(5000000:0, `timestamp`sym`price, [TIMESTAMP, SYMBOL, DOUBLE]) as leftTable
+share streamTable(5000000:0, `timestamp`sym`val, [TIMESTAMP, SYMBOL, DOUBLE]) as rightTable
+share streamTable(5000000:0, `timestamp`sym`volume, [TIMESTAMP, SYMBOL, DOUBLE]) as middleTable
+
+#临时表
+share streamTable(5000000:0, `timestamp`sym`price`val`total`diff`ratio, [TIMESTAMP, SYMBOL, DOUBLE, DOUBLE, DOUBLE, DOUBLE, DOUBLE]) as output1
+share table(5000000:0, `timestamp`sym`price`val`total`diff`ratio, [TIMESTAMP, SYMBOL, DOUBLE, DOUBLE, DOUBLE, DOUBLE, DOUBLE]) as output2
+
+#引擎
+ejEngine_left_right=createEquiJoinEngine("leftJoin1", leftTable, rightTable, output1, <[price, val, price+val, price-val, price/val]>, `sym, `timestamp, 5000)
+ejEngine_middle=createEquiJoinEngine("leftJoin2", output1, middleTable, output2, <[price, val, volume+val, volume-val, volume/val]>, `sym, `timestamp, 5000)
+
+#订阅
+topic1=subscribeTable(tableName="leftTable", actionName="writeLeft", offset=0, handler=appendForJoin{ejEngine_left_right, true}, batchSize=10000, throttle=1)
+topic2=subscribeTable(tableName="rightTable", actionName="writeRight", offset=0, handler=appendForJoin{ejEngine_left_right, false}, batchSize=10000, throttle=1)
+topic3=subscribeTable(tableName="output1", actionName="writeMiddle_1", offset=0, handler=appendForJoin{ejEngine_middle, true}, batchSize=10000, throttle=1)
+topic4=subscribeTable(tableName="middleTable", actionName="writeMiddle_2", offset=0, handler=appendForJoin{ejEngine_middle, false}, batchSize=10000, throttle=1)
+
+def writeLeftTable(mutable tb){
+    batch = 1000
+    for(i in 1..300){
+        tmp = table(batch:batch, `timestamp`sym`price, [TIMESTAMP, SYMBOL, DOUBLE])
+        tmp[`timestamp]=take(2012.01.01T00:00:00.000+i, batch)
+        tmp[`sym]=shuffle("A"+string(1..batch))
+        tmp[`price]=rand(100.0, batch)
+        tb.append!(tmp)
+    }
+}
+
+def writeRightTable(mutable tb){
+    batch = 500
+    for(i in 1..200){
+        tmp = table(batch:batch, `timestamp`sym`val, [TIMESTAMP, SYMBOL, DOUBLE])
+        tmp[`timestamp]=take(2012.01.01T00:00:00.000+i, batch)
+        tmp[`sym]=shuffle("A"+string(1..batch))
+        tmp[`val]=rand(100.0, batch)
+        tb.append!(tmp)
+    }
+}
+
+def writeMiddleTable(mutable tb){
+    batch = 500
+    for(i in 1..200){
+        tmp = table(batch:batch, `timestamp`sym`volume, [TIMESTAMP, SYMBOL, DOUBLE])
+        tmp[`timestamp]=take(2012.01.01T00:00:00.000+i, batch)
+        tmp[`sym]=shuffle("A"+string(1..batch))
+        tmp[`volume]=rand(100.0, batch)
+        tb.append!(tmp)
+    }
+}
+
+job1 = submitJob("writeLeft", "", writeLeftTable, leftTable)
+job2 = submitJob("writeRight", "", writeRightTable, rightTable)
+job3 = submitJob("writeMiddle", "", writeMiddleTable, middleTable)
+
+select count(*) from output2 order by sym, timestamp
+100000
+
+
+select count(*) from leftTable
+select count(*) from rightTable
+select count(*) from middleTable
+select count(*) from output1
+select count(*) from output2 order by sym, timestamp
+
+// clear streaming
+unsubscribeTable(tableName="leftTable", actionName="writeLeft")
+unsubscribeTable(tableName="rightTable", actionName="writeRight")
+unsubscribeTable(tableName="output1", actionName="writeMiddle_1")
+unsubscribeTable(tableName="middleTable", actionName="writeMiddle_2")
+
+dropStreamTable("leftTable")
+dropStreamTable("rightTable")
+dropStreamTable("output1")
+
+dropStreamEngine("leftJoin1")
+dropStreamEngine("leftJoin2")

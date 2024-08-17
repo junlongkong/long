@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fd881ba-0952-48df-a005-cb912480e7d0" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2gXkiIx4Ap0QX1GVrtWyZ0KcIA5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Main_All.executor&quot;: &quot;Run&quot;,
+    &quot;Python.clientSocket.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.emaTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.heart.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insertData (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.insertData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insertStreamData.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insertStreamTable (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.insertTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.operationNats.executor&quot;: &quot;Run&quot;,
+    &quot;Python.operationNats2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.publish.executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketClient (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketClient.executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketServer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketServerHeart (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketServerHeart-copy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.socketServerHeart.executor&quot;: &quot;Run&quot;,
+    &quot;Python.streamTable.executor&quot;: &quot;Run&quot;,
+    &quot;Python.subscribe (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.subscribe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testThreading.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testset (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.testset.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/PycharmProjects/pythonProject/dolphindb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\pythonProject\dolphindb" />
+      <recent name="C:\Users\Administrator\PycharmProjects\pythonProject\script" />
+      <recent name="C:\Users\Administrator\PycharmProjects\DataCenter\natsMiddle" />
+      <recent name="C:\Users\Administrator\PycharmProjects\DataCenter\webSocket" />
+      <recent name="C:\Users\Administrator\PycharmProjects\DataCenter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\pythonProject\script" />
+      <recent name="C:\Users\Administrator\PycharmProjects\DataCenter\webSocket" />
+      <recent name="C:\Users\Administrator\PycharmProjects\DataCenter\Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.insertStreamTable (1)">
+    <configuration name="Main_All" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataCenter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../DataCenter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../DataCenter/Main_All.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="emaTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataCenter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dolphindb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dolphindb/emaTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insertStreamTable (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataCenter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dolphindb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dolphindb/insertStreamTable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insertTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataCenter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dolphindb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dolphindb/insertTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="subscribe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataCenter" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dolphindb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dolphindb/subscribe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.insertStreamTable (1)" />
+        <item itemvalue="Python.subscribe" />
+        <item itemvalue="Python.insertTest" />
+        <item itemvalue="Python.Main_All" />
+        <item itemvalue="Python.emaTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fd881ba-0952-48df-a005-cb912480e7d0" name="Changes" comment="" />
+      <created>1715851437646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715851437646</updated>
+      <workItem from="1715851443524" duration="4050000" />
+      <workItem from="1715868337785" duration="4038000" />
+      <workItem from="1715872904462" duration="3479000" />
+      <workItem from="1715876410856" duration="113000" />
+      <workItem from="1715914065195" duration="6105000" />
+      <workItem from="1715932520719" duration="11501000" />
+      <workItem from="1715950178835" duration="2084000" />
+      <workItem from="1715952292627" duration="4643000" />
+      <workItem from="1716039298876" duration="1143000" />
+      <workItem from="1716085773665" duration="8935000" />
+      <workItem from="1716106173603" duration="535000" />
+      <workItem from="1716110036651" duration="4376000" />
+      <workItem from="1716114694897" duration="7147000" />
+      <workItem from="1716167255260" duration="20951000" />
+      <workItem from="1716300959221" duration="7037000" />
+      <workItem from="1716374321036" duration="3134000" />
+      <workItem from="1716778063244" duration="26899000" />
+      <workItem from="1716879194997" duration="10977000" />
+      <workItem from="1716903213604" duration="5376000" />
+      <workItem from="1716966427015" duration="6725000" />
+      <workItem from="1717086796016" duration="2000" />
+      <workItem from="1723864373867" duration="621000" />
+      <workItem from="1723865245665" duration="12000" />
+      <workItem from="1723865563460" duration="14000" />
+      <workItem from="1723865663806" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/mongoDB/insertData.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/dolphinDB/subscribe.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/dolphinDB/subscribe.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/mongoDB/insertData.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/webSocket/socketServerHeart.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/natsMiddle/subscribe.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../DataCenter/webSocket/socketServerHeart.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dolphindb/batchStreamTable.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dolphindb/insertStreamTable.py</url>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$heart.coverage" NAME="heart Coverage Results" MODIFIED="1715876494040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/websocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$testset.coverage" NAME="testset Coverage Results" MODIFIED="1716214063448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/natsMiddle" />
+    <SUITE FILE_PATH="coverage/pythonProject$test3.coverage" NAME="test3 Coverage Results" MODIFIED="1716218888509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/Test" />
+    <SUITE FILE_PATH="coverage/pythonProject$Main_All.coverage" NAME="Main_All Coverage Results" MODIFIED="1716818566346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter" />
+    <SUITE FILE_PATH="coverage/pythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1716208260606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/natsMiddle" />
+    <SUITE FILE_PATH="coverage/pythonProject$config.coverage" NAME="config Coverage Results" MODIFIED="1716086740661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/utils" />
+    <SUITE FILE_PATH="coverage/pythonProject$subscribe__1_.coverage" NAME="subscribe (1) Coverage Results" MODIFIED="1716096863788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/dolphinDB" />
+    <SUITE FILE_PATH="coverage/pythonProject$subscribe.coverage" NAME="subscribe Coverage Results" MODIFIED="1716973135414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketServer.coverage" NAME="socketServer Coverage Results" MODIFIED="1715943486788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/websocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1716218689038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/Test" />
+    <SUITE FILE_PATH="coverage/pythonProject$operationNats.coverage" NAME="operationNats Coverage Results" MODIFIED="1716214177793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/natsMiddle" />
+    <SUITE FILE_PATH="coverage/pythonProject$testset__1_.coverage" NAME="testset (1) Coverage Results" MODIFIED="1716217924428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/Test" />
+    <SUITE FILE_PATH="coverage/pythonProject$insertStreamTable__1_.coverage" NAME="insertStreamTable (1) Coverage Results" MODIFIED="1716973728444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$insertStreamData.coverage" NAME="insertStreamData Coverage Results" MODIFIED="1716788818349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketServerHeart_copy.coverage" NAME="socketServerHeart-copy Coverage Results" MODIFIED="1716114904929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/webSocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$testThreading.coverage" NAME="testThreading Coverage Results" MODIFIED="1716115396443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/webSocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$streamTable.coverage" NAME="streamTable Coverage Results" MODIFIED="1716792080772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$insertData__1_.coverage" NAME="insertData (1) Coverage Results" MODIFIED="1716093987264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/mongoDB" />
+    <SUITE FILE_PATH="coverage/pythonProject$publish.coverage" NAME="publish Coverage Results" MODIFIED="1716125095826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/natsMiddle" />
+    <SUITE FILE_PATH="coverage/pythonProject$insertTest.coverage" NAME="insertTest Coverage Results" MODIFIED="1716968833929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketServerHeart.coverage" NAME="socketServerHeart Coverage Results" MODIFIED="1716221760986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/webSocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$operationNats2.coverage" NAME="operationNats2 Coverage Results" MODIFIED="1716208137337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/natsMiddle" />
+    <SUITE FILE_PATH="coverage/pythonProject$emaTest.coverage" NAME="emaTest Coverage Results" MODIFIED="1716799806858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dolphindb" />
+    <SUITE FILE_PATH="coverage/pythonProject$insertData.coverage" NAME="insertData Coverage Results" MODIFIED="1716092177186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/mongodb" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketClient.coverage" NAME="socketClient Coverage Results" MODIFIED="1716115725591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/webSocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketClient__1_.coverage" NAME="socketClient (1) Coverage Results" MODIFIED="1715951592856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/websocketAll" />
+    <SUITE FILE_PATH="coverage/pythonProject$clientSocket.coverage" NAME="clientSocket Coverage Results" MODIFIED="1715874652521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/websocket" />
+    <SUITE FILE_PATH="coverage/pythonProject$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1716218949999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/Test" />
+    <SUITE FILE_PATH="coverage/pythonProject$socketServerHeart__1_.coverage" NAME="socketServerHeart (1) Coverage Results" MODIFIED="1715954835013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../DataCenter/websocketAll" />
+  </component>
+</project>

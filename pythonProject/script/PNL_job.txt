@@ -1,0 +1,28 @@
+#三个流表
+
+share streamTable(5000000:0, `timestamp`symbol`invest_type`volume`user_id, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE, SYMBOL]) as position
+share streamTable(5000000:0, `timestamp`symbol`value, [TIMESTAMP, SYMBOL, DOUBLE]) as market
+share streamTable(5000000:0, `timestamp`symbol`account`volume`user_id, [TIMESTAMP, SYMBOL, SYMBOL, DOUBLE, SYMBOL]) as fund
+share streamTable(5000000:0, `timestamp`symbol`spot_value`user_id, [TIMESTAMP, SYMBOL, DOUBLE, SYMBOL]) as pnl
+
+
+def cycleFunction(mutable userId){
+    do{
+        sleep(3000);
+        currentPostion = select symbol,last(volume) as value from position where user_id = userId group by symbol;
+        currentFund = select symbol,last(volume)  as value from fund where user_id = userId group by symbol ;
+        currentMarket = select symbol,value from market where symbol like concat(currentFund.symbol[0],"%");
+        v1 = currentPostion.value[0];
+        v2 = currentFund.value[0];
+        v3 = currentMarket.value[0];
+        pnl_value = v1 * v2 * v3;
+
+        symbol_name = currentFund.symbol[0];
+        t2=table(now() as timestamp, symbol_name as symbol, pnl_value as spot_value, userId as user_id)
+        tableInsert(pnl, t2);
+    }while(true);
+};
+
+user_id = "kongjunlong"
+job1 = submitJob("cycleJob", "", cycleFunction, user_id);
+

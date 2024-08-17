@@ -1,0 +1,20 @@
+#建立流表Trade
+share streamTable(100:0, `Symbol`Datetime`Price`Volume,[SYMBOL,TIMESTAMP,DOUBLE,INT]) as Trade
+
+#建立流表OHLC
+share streamTable(100:0, `datetime`Symbol`open`high`low`close`volume,[TIMESTAMP,SYMBOL,DOUBLE,DOUBLE,DOUBLE,DOUBLE,LONG]) as OHLC
+
+#定义时序引擎, updateTime设置窗口输出频率，实时刷新聚合
+tsAggr = createTimeSeriesAggregator(name="tsAggr", windowSize=60000, step=60000, metrics=<[first(Price),max(Price),min(Price),last(Price),sum(volume)]>,
+dummyTable=Trade, outputTable=OHLC, timeColumn=`Datetime, keyColumn=`Symbol,updateTime=1, useWindowStartTime=true, fill =["ffill","ffill","ffill","ffill",0] );
+
+#updateTime=1  删除
+tsAggr = createTimeSeriesAggregator(name="tsAggr", windowSize=60000, step=60000, metrics=<[first(Price),max(Price),min(Price),last(Price),sum(volume)]>,
+dummyTable=Trade, outputTable=OHLC, timeColumn=`Datetime, keyColumn=`Symbol,useWindowStartTime=true, fill =["ffill","ffill","ffill","ffill",0] );
+
+#forceTriggerTime=0  新增
+tsAggr = createTimeSeriesAggregator(name="tsAggr", windowSize=60000, step=60000, metrics=<[first(Price),max(Price),min(Price),last(Price),sum(volume)]>,
+dummyTable=Trade, outputTable=OHLC, timeColumn=`Datetime, keyColumn=`Symbol,useWindowStartTime=true, forceTriggerTime=0, fill =["ffill","ffill","ffill","ffill",0] );
+
+#订阅Trade数据到 时序引擎 入 OHLC 表
+subscribeTable(tableName="Trade", actionName="act_tsaggr", offset=0, handler=append!{tsAggr}, msgAsTable=true);

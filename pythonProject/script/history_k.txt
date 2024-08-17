@@ -1,0 +1,38 @@
+n = 1000000
+date = take(2019.11.07 2019.11.08, n)
+time = (09:30:00.000 + rand(int(6.5*60*60*1000), n)).sort!()
+timestamp = concatDateTime(date, time)
+price = 100+cumsum(rand(0.02, n)-0.01)
+volume = rand(1000, n)
+symbol = rand(`AAPL`FB`AMZN`MSFT, n)
+trade = table(symbol, date, time, timestamp, price, volume).sortBy!(`symbol`timestamp)
+undef(`date`time`timestamp`price`volume`symbol)
+#计算K线存起来
+barMinutes = 5
+OHLC_test = select first(price) as open, max(price) as high, min(price) as low, last(price) as close, sum(volume) as volume
+from trade group by symbol, date, bar(time, barMinutes*60*1000) as barStart
+
+
+#
+barMinutes = 5
+OHLC = select first(price) as open, max(price) as high, min(price) as low, last(price) as close, sum(volume) as volume
+from trade group by symbol, date, bar(time, barMinutes*60*1000) as barStart
+
+#指定起始时间
+barMinutes = 5
+sessionsStart=09:30:00.000 13:00:00.000
+OHLC = select first(price) as open, max(price) as high, min(price) as low, last(price) as close, sum(volume) as volume
+from trade group by symbol, dailyAlignedBar(timestamp, sessionsStart, barMinutes*60*1000) as barStart
+
+#test
+select * from trade
+barMinutes = 5
+select first(price) as open, max(price) as high, min(price) as low, last(price) as close, sum(volume) as volume
+from trade
+where date > 2019.11.07
+group by symbol, date, bar(time, barMinutes*60*1000) as barStart;
+
+select first(price) as open, max(price) as high, min(price) as low, last(price) as close, sum(volume) as volume
+from trade
+where date > 2019.11.08
+group by symbol, date, bar(time, barMinutes*60*1000) as barStart;
