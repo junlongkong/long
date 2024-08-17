@@ -1,13 +1,24 @@
-mongod   --dbpath C:\Program Files\MongoDB\Server\5.0\data --logpath C:\Program Files\MongoDB\Server\5.0\log\mongodb.log  --logappend --auth --service
-
-
-
-启动服务的脚本cmd:
+本地部署mongodb，启动服务的脚本cmd:
 cd C:\Program Files\MongoDB\Server\5.0\bin
 mongod --config "C:\Program Files\MongoDB\Server\5.0\bin\mongod.cfg" --install
 net start MongoDB
 
+mongodb端口：27017
+用户名/密码：admin/password
 
+
+活字格运行后链接：
 http://localhost:14772/Forguncy/
 登录账号密码：
 kongjunlong/123456
+
+
+#备份test 数据库
+mongodump -uadmin -ppassword --port 27017 --authenticationDatabase admin -j 2 -d test -o  C:\Users\Administrator\Desktop\mongodb-database-tools-windows-x86_64-100.10.0\bin
+
+#还原test 数据库
+mongorestore -uadmin -ppassword --port 27017 --authenticationDatabase admin -d test11  C:\Users\Administrator\Desktop\mongodb-database-tools-windows-x86_64-100.10.0\bin\test
+
+
+
+

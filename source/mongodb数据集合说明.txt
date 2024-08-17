@@ -1,0 +1,82 @@
+accountPosition  --  用户持仓集合
+
+用户+账号+持仓类型 组合组合成 唯一键 = user_id + account + unique_key
+其中 unique_key 枚举类型如下：future_position /bond_position 等，可自定义
+{
+    "unique_key" : "future_position",  -- 期货持仓
+    "option_position" : "500",   
+    "open_position" : "500",
+    "short_position" : "500",
+    "close_position" : "500",
+    "user_id" : "kongjunlong",    --- 用户
+    "account" : "account_02_01"   ---账号
+} 
+
+
+dealInfo--  成交交易集合
+包括以下字段：
+{
+    "unique_key" : "deal_info",       --类型
+    "security_code" : "210210.IB",  ---债券代码
+    "counter_party" : "平安证券",    -- 对手方
+    "side" : "买入",                         --买卖方向
+    "qty" : "2000",                          ---买卖量
+    "price" : "106.2350",                 ---价格
+    "account" : "account_02_02",       --账号
+    "time" : "2024-05-05 11:51:16"   -- 落库时间
+}
+
+
+logNotify --  策略日志，交易日志，等日志的集合
+包括以下字段：
+{
+    "unique_key" : "log_notify",                -- 类型
+    "strategy_id" : "DEMO_0001",             -- 策略ID
+    "strategy_name" : "策略-测试_0001",   -- 策略名称
+    "text" : "产生了对冲，对冲账号余额不足",    -- 日志内容
+    "type" : "TRADE",                                      -- 日志类型
+    "level" : "INFO",                                       -- 日志级别
+    "where_from" : "dolphindb_service",          -- 日志来源
+    "time" : "2024-05-05 11:51:16"                  -- 落库时间
+}
+
+marketInfo -- 行情集合
+包括以下字段：
+{
+    "unique_key" : "bond_info",      -- 类型
+    "buy_company" : "QB",             -- 买方
+    "buy_qty" : "1000",                   -- 买方量
+    "buy_price" : "106.5727",          -- 买方价格
+    "buy_yield" : "21.2350",             -- 买方收益率
+    "sell_company" : "BMQ",          -- 卖方
+    "sell_qty" : "1000",                    -- 卖方量
+    "sell_price" : "106.7069",           -- 卖方价格
+    "sell_yield" : "2.1450",               -- 卖方收益率
+    "security_code" : "210210.IB"    -- 债券代码
+}
+
+orderMonitor -- 订单监控集合
+包括以下字段：
+{
+    "unique_key" : "order_monitor",    -- 类型
+    "security_id" : "210210.IB",             -- 债券代码
+    "security_name" : "21国开01",         -- 债券代码
+    "trade_date" : "20240512",            -- 交易日期
+    "trade_breed" : "Bond",                 -- 交易品种
+    "trade_place" : "CFETS",                --交易场所
+    "status" : "Send",                          -- 订单状态，Send已发送，Cancelled已取消,  Done成交,  Rejected拒绝， Expired超时
+    "time" : "2024-05-05 18:02:15"      -- 落库时间
+}
+
+
+serverMonitor  -- 服务监控集合/表
+包括以下字段：
+{
+    "unique_key" : "server_monitor",  -- 类型
+    "server_id" : "quant_server_001",  -- 服务ID
+    "server_name" : "quant_server",   -- 服务名
+    "server_type" : "single",                --服务类型，单节点还是集群
+    "server_status" : "RUNNING",       --服务状态，RUNNING, STOP
+    "message_type" : "HEART",           --服务推送的消息类型
+    "time" : "2024-05-11 18:02:15"      -- 落库时间
+}
