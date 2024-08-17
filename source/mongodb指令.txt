@@ -1,0 +1,13 @@
+mongod   --dbpath C:\Program Files\MongoDB\Server\5.0\data --logpath C:\Program Files\MongoDB\Server\5.0\log\mongodb.log  --logappend --auth --service
+
+
+
+启动服务的脚本cmd:
+cd C:\Program Files\MongoDB\Server\5.0\bin
+mongod --config "C:\Program Files\MongoDB\Server\5.0\bin\mongod.cfg" --install
+net start MongoDB
+
+
+http://localhost:14772/Forguncy/
+登录账号密码：
+kongjunlong/123456
